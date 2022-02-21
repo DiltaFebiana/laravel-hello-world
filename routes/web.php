@@ -47,8 +47,8 @@ Route::group(['prefix'=>'/products'], function () {
         echo 'Marbel Premium <br>';
         echo 'Marbel Piano <br>';
         echo 'Marbel Juz Amma';
-    })
     });
+});
 
 
    
