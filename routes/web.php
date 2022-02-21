@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    echo 'Selamat Datang';
+  echo 'Selamat Datang';
 });
 
 Route::get('/about', function () {
@@ -23,7 +23,14 @@ Route::get('/about', function () {
 });
 
 Route::get('/article/{id}', function ($id='1') {
-    echo ('Halaman artikel ini dengan id '.$id);
+ echo ('Halaman artikel ini dengan id '.$id);
 });
+
+
+Route::get('/', [App\Http\Controllers\PageController::class, 'index']); 
+
+Route::get('/about', [App\Http\Controllers\PageController::class, 'about']); 
+
+Route::get('/article/{$id}', [App\Http\Controllers\PageController::class, 'article']); 
 
    
