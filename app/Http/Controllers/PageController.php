@@ -11,7 +11,7 @@ class PageController extends Controller
     }
 
     public function about(){
-        echo "NIM   : 2041720136";
+        echo "NIM   : 2041720136 <br>";
         echo "Nama  : Dilta Febiana";
     }
 
