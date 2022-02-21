@@ -99,6 +99,8 @@ Route::get('/kunjungan-industri', function(){
 });
 });
 
+Route::get('/about-us', [App\Http\Controllers\AboutUsController::class, 'about-us']); 
+
 
 
    
