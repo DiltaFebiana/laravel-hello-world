@@ -62,7 +62,7 @@ Route::group(['prefix'=>'/category'], function () {
     });
 });
 
-Route::get('/news/{mynews}', [App\Http\Controllers\HomeController::class, 'news']);
+Route::get('/news/{mynews}', [App\Http\Controllers\NewsController::class, 'news']);
 
 
 Route::get('/program', [App\Http\Controllers\NewsController::class, 'program']); 
