@@ -33,4 +33,12 @@ Route::get('/about', [App\Http\Controllers\PageController::class, 'about']);
 
 Route::get('/article/{$id}', [App\Http\Controllers\PageController::class, 'article']); 
 
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']); 
+
+Route::get('/about', [App\Http\Controllers\AboutController::class, 'about']); 
+
+Route::get('/article/{id}', [App\Http\Controllers\ArticleController::class, 'article']); 
+
+
    
