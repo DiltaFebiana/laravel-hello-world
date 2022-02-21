@@ -23,7 +23,7 @@ Route::get('/about', function () {
 });
 
 Route::get('/article/{id}', function ($id='1') {
-    echo ('Halaman artikel ini dengan id ',$id);
+    echo ('Halaman artikel ini dengan id '.$id);
 });
 
    
