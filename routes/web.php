@@ -63,7 +63,7 @@ Route::group(['prefix'=>'/category'], function () {
 });
 
 Route::get('/news', [App\Http\Controllers\NewsController::class, 'news']); 
-Route::group(['prefix'=>'program'], function () {
+Route::group(['prefix'=>'/program'], function () {
     Route::get('/karir', function(){
         echo 'Ilustrator <br>';
         echo 'Trainer Bisnis dan Pemasaran <br>';
