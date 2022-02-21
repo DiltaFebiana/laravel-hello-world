@@ -6,5 +6,7 @@ use Illuminate\Http\Request;
 
 class NewsController extends Controller
 {
-    //
+    public function news(){
+        echo "Berita hari ini adalah tentang education for children";
+    }
 }
