@@ -62,5 +62,22 @@ Route::group(['prefix'=>'/category'], function () {
     });
 });
 
+Route::get('/news', [App\Http\Controllers\NewsController::class, 'news']); 
+Route::group(['prefix'=>'program'], function () {
+    Route::get('/karir', function(){
+        echo 'Ilustrator <br>';
+        echo 'Trainer Bisnis dan Pemasaran <br>';
+        echo 'Fronted Developer <br>';
+    });
+    Route::get('/magang', function(){
+        echo 'Magang Teknis <br>';
+        echo 'Magang Non-Teknis <br>';
+    });
+    Route::get('/kunjungan-industri', function(){
+        echo 'Kunjungan Industri: Tanggungjawab dan Tugas Seorang Programmer <br>';
+        echo 'Kunjungan Industri : Game, Animasi, dan Industri Kreatif';
+    });
+});
+
 
    
