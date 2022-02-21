@@ -43,7 +43,7 @@ Route::get('/article/{id}', [App\Http\Controllers\ArticleController::class, 'art
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']); 
 
 Route::group(['prefix'=>'/products'], function () {
-    Route::get('/marbel-educational games', function(){
+    Route::get('/marbel-educationalgames', function(){
         echo 'Marbel Premium <br>';
         echo 'Marbel Piano <br>';
         echo 'Marbel Juz Amma';
