@@ -42,11 +42,23 @@ Route::get('/article/{id}', [App\Http\Controllers\ArticleController::class, 'art
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']); 
 
-Route::group(['prefix'=>'/products'], function () {
+Route::group(['prefix'=>'/category'], function () {
     Route::get('/marbel-educationalgames', function(){
         echo 'Marbel Premium <br>';
         echo 'Marbel Piano <br>';
         echo 'Marbel Juz Amma';
+    });
+    Route::get('/marbel-and-friends-kids-games', function(){
+        echo 'Marbel Fun Number <br>';
+        echo 'Marbel Polisi <br>';
+        echo 'Marbel Perawat Hewan Lucu <br>';
+        echo 'Marbel Pengasuh anak <br>';
+        echo 'Marbel Pengasuh Anak 2';
+    }); 
+    Route::get('/marbel-Riry-Story-Books', function(){
+        echo 'Kisah Keledai yang dungu <br>';
+        echo 'Kisah kerbau kancil dan ular <br>';
+        echo 'Landak dan Ular';
     });
 });
 
