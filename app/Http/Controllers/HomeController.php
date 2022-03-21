@@ -6,10 +6,23 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function index(){
-        echo "<h1> Educa Studio <br>";
-        echo "<h4> A Simple Fun Educational Tool <br>";
-        echo "<h2> Marbel <br>";
-        echo "<h4> Mari belajar sambil bermain";
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function index()
+    {
+        return view('home');
     }
 }
