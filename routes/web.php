@@ -19,8 +19,6 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::resource('articles', ArticleController::class);
-
 // Route::get('/about', function () {
 //     echo ('NIM  : 2041720136 <br>');
 //     echo ('Nama : Dilta Febiana');
@@ -113,3 +111,6 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::resource('articles', ArticleController::class);
+
+Route::get('/article/cetak_pdf', [ArticleController::class,'cetak_pdf'])->name('cetak_pdf');
