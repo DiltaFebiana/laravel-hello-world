@@ -1,6 +1,8 @@
 <!-- <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ArticleController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/home', function () {
     return view('home');
 });
+
+Route::resource('articles', ArticleController::class);
 
 // Route::get('/about', function () {
 //     echo ('NIM  : 2041720136 <br>');
@@ -108,3 +112,4 @@ Route::get('/home', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
